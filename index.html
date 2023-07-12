@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora 2000</title>
+    <!--? Fav Icon -->
+    <link rel="icon" type="image/png" href="/img/icon.png"/>
+    <!--?  Arquivo CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--? Script JS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                 crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light" >
+            <div class="container-fluid">
+                <!--? me = margin end = margem right(direita)-->
+                <img class="me-3" src="/imagens/graninha.jpg" alt="Locadora 2000" />
+                <a class="navbar-brand" href="#topo">Controle Financeiro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navBarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                            id="dropGeneros" 
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            href="#drop"
+                            aria-expanded="false">Lançamentos por Categoria</a>
+
+                        <ul class="dropdown-menu" 
+                        aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#hcasa">Casa</a></li>
+                            <li><a class="dropdown-item" href="#heduc">Educação</a></li>
+                            <li><a class="dropdown-item" href="#hfilho">Filhos</a></li>
+                            <li><a class="dropdown-item" href="#htransp">Transporte</a></li>
+                            <li><a class="dropdown-item" href="#houtros">Outros</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lancDesp">Lançar Despesa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="display-1 text-center mb-5 mt-3" id="topo">Despesas</h1>
+            <div class="container">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Nome da despesa</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">Repete</th>
+                            <th scope="col">Vencimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-center table-primary" colspan="6" id="hcasa">Casa</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td scope="col">Casa</td>
+                            <td scope="col">Financiamento Imobiliário</td>
+                            <td scope="col">R$1.530,45</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">27/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td scope="col">Casa</td>
+                            <td scope="col">Luz</td>
+                            <td scope="col">R$210,56</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">08/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td scope="col">Casa</td>
+                            <td scope="col"> Gás</td>
+                            <td scope="col">R$95,24</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">11/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th class="text-center table-primary" colspan="6" id="heduc">Educação</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td scope="col">Colégio</td>
+                            <td scope="col">Colégio Filho 1</td>
+                            <td scope="col">R$1.500,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">10/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td scope="col">Colégio</td>
+                            <td scope="col">Colégio Filho 2</td>
+                            <td scope="col">R$500,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">10/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td scope="col">Curso Senac</td>
+                            <td scope="col">Meu Curso</td>
+                            <td scope="col"> R$400,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">10/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th class="text-center table-primary" colspan="6" id="hfilho">Filhos</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td scope="col">Filho 1</td>
+                            <td scope="col">Handebol</td>
+                            <td scope="col">R$150,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">05/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td scope="col">Filho 1</td>
+                            <td scope="col">Patinação</td>
+                            <td scope="col">R$100,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">05/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td scope="col">Filho 2</td>
+                            <td scope="col">Fonoaudiologia</td>
+                            <td scope="col">R$650,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">10/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th class="text-center table-primary" colspan="6" id="htransp">Transporte</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td scope="col">Carro</td>
+                            <td scope="col">Financiamento</td>
+                            <td scope="col">R$500,00</td>
+                            <td scope="col">Sim</td>
+                            <td scope="col">15/07/2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td scope="col">Carro</td>
+                            <td scope="col">Mecânica</td>
+                            <td scope="col">475,00</td>
+                            <td scope="col">Não</td>
+                            <td scope="col"> -- </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td scope="col">Moto</td>
+                            <td scope="col">Troca de Óleo</td>
+                            <td scope="col">R$89,00</td>
+                            <td scope="col">Não</td>
+                            <td scope="col">--</td>>
+                        </tr>
+                        <tr id="insertRow"></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mb-5 mt-5">
+                <hr class="border-primary border-3 opacity-75"/>
+            </div>
+            <div class="container mb-5" id="lancDesp">
+                <h2 class="text-center mb-4" >Lançar Despesa</h2>
+                    <form name="register" onsubmit="event.preventDefault()">
+                        <!--?  Cadastro de Código e Categoria-->
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="codDesp" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="codDesp" name="cod" />
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="catDesp" class="form-label">Categoria</label>
+                                <input type="text" class="form-control" id="catDesp" name="categoria" />
+                            </div>
+                        <!--?  Cadastro de Nome e Valor da despesa -->
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="nomeDesp" class="form-label">Nome da Despesa</label>
+                                <input type="text" class="form-control" id="nomeDesp" name="despesa" />
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="valorDesp" class="form-label">Valor da Despesa</label>
+                                <input type="text" class="form-control" id="valorDesp" name="valord"  />
+                            </div>
+                            <!--?  Cadastro de Repete e vencoimento -->
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="repete" class="form-label">Repete</label>
+                                <input type="text" class="form-control" id="repete" name="repete" />
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="vectoDesp" class="form-label">Vencimento</label>
+                                <input type="date" class="form-control" id="vectoDesp" name="vecto"  />
+                            </div>
+
+                        </div>
+                        <!--? Cadastro de Categoria-->
+                        <p class="mt-1">Selecione a Categoria</p>
+                        <div class="row mt-3">
+                            <div class="col form-check ms-5">
+                                <input type="radio" id="radioHCasa" name="radio" class="form-check-input" value="casa"/>
+                                <label for="radioHCasa" class="form-label">Casa</label>
+                            </div>
+                            <div class="col form-check">
+                                <input type="radio" id="radioHEduc" name="radio" class="form-check-input" value="educacao"/>
+                                <label for="radioHEduc" class="form-label">Educação</label>
+                            </div>
+                            <div class="col form-check">
+                                <input type="radio" id="radioHFilho" name="radio" class="form-check-input" value="filhos"/>
+                                <label for="radioHFilho" class="form-label">Filhos</label>
+                            </div>
+                            <div class="col form-check">
+                                <input type="radio" id="radioHTransp" name="radio" class="form-check-input" value="transporte"/>
+                                <label for="radioHTransp" class="form-label">Transporte</label>
+                            </div>     
+                        </div>
+                        <!--? Botão enviar -->
+                        <div class="col-auto d-flex justify-content-center">
+                            <button type="submit" onclick="validationForm(); insert()"  class="btn btn-primary mt-3">Cadastrar</button>
+                        </div>
+                    </form>
+            </div>
+    </body>
+</html>
